@@ -1,0 +1,5 @@
+streamlit==1.18.1
+pandas==1.5.3
+colorcet==3.0.1
+matplotlib==3.7.0
+bokeh==2.4.3
