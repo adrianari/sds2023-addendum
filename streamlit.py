@@ -65,7 +65,7 @@ mapli = ['1: Corona pandemic - Vaccination','2: Radio broadcasting','3: (Public)
 
 st.write("## Interactive graphic to 'Assessing polarisation in brand-related comments on three Swiss online media portals with Natural-Language-Processing'")
 
-dfx = pd.read_csv("C:\\Users\\JumpStart\switchdrive\\hslu\\Archive\\SDS2023\\auswertung\\df_for_pub.csv")
+dfx = pd.read_csv("df_for_pub.csv")
 all_brands = dfx["Brand"].unique().tolist()
 all_topics = dfx["topics_updated"].unique().tolist()
 
