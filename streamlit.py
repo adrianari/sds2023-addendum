@@ -15,6 +15,8 @@ from bokeh.plotting import figure, output_file, show
 from bokeh.core.properties import value
 
 
+st.write("## Interactive graphics to 'Assessing polarisation in brand-related comments on three Swiss online media portals with Natural Language Processing'")
+
 tab1, tab2 = st.tabs(["Topic Modelling", "Words per topic"])
 
 with tab1: 
@@ -67,7 +69,7 @@ with tab1:
     '23: Age & generations','24: Gastronomy','25: Television broadcasting',
     '26: Dietary choices','27: Banking industry','28: Sports','29: Law enforcement']
 
-    st.write("## Interactive graphic to 'Assessing polarisation in brand-related comments on three Swiss online media portals with Natural Language Processing'")
+    
 
     dfx = pd.read_csv("df_for_pub.csv")
     all_brands = dfx["Brand"].unique().tolist()
