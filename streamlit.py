@@ -145,5 +145,5 @@ with tab1:
 with tab2:
     HtmlFile = open("topic-word-scores.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
-    st.components.v1.html(source_code, height = 1200)  
+    st.components.v1.html(source_code, height = 2000)  
     
