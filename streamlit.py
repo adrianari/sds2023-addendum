@@ -15,7 +15,7 @@ from bokeh.plotting import figure, output_file, show
 from bokeh.core.properties import value
 
 
-tab1, tab2 = st.tabs(2)
+tab1, tab2 = st.tabs("Topic Modelling", "Words per topic")
 
 with tab1: 
     label_dict = {
@@ -142,4 +142,4 @@ with tab1:
 
 with tab2:
     st.components.v1.iframe("topic-word-scores.html")
-    
+
