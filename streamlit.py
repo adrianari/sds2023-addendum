@@ -63,7 +63,7 @@ mapli = ['1: Corona pandemic - Vaccination','2: Radio broadcasting','3: (Public)
 '23: Age & generations','24: Gastronomy','25: Television broadcasting',
 '26: Dietary choices','27: Banking industry','28: Sports','29: Law enforcement']
 
-st.write("## Interactive graphic to 'Assessing polarisation in brand-related comments on three Swiss online media portals with Natural-Language-Processing'")
+st.write("## Interactive graphic to 'Assessing polarisation in brand-related comments on three Swiss online media portals with Natural Language Processing'")
 
 dfx = pd.read_csv("df_for_pub.csv")
 all_brands = dfx["Brand"].unique().tolist()
@@ -103,6 +103,7 @@ else:
 
 mediums = [m1, m2, m3, m4]
 
+
 dfa = dfx[(dfx["Brand"].isin(mediums)) & (dfx["topics_updated"].isin(selectbox_topics))]
 dfa['topics_updated'] = dfa['topics_updated'].astype(str)
 
@@ -133,3 +134,7 @@ p.scatter(x='x',
               )
 
 st.bokeh_chart(p)
+
+
+
+st.components.v1.iframe("topic-word-scores.html")
